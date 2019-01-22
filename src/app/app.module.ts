@@ -12,6 +12,7 @@ library.add(fas);
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ComponentModule } from './component/component.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     FontAwesomeModule,
     AngularFireModule.initializeApp(environment.firebase),
+    ComponentModule,
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

@@ -12,6 +12,5 @@ export class AppComponent {
 
   constructor(db: AngularFirestore) {
     this.items = db.collection('users').valueChanges();
-    console.log(this.items);
   }
 }
