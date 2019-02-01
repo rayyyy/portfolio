@@ -22,8 +22,8 @@ import { ComponentModule } from './component/component.module';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    AngularFireModule.initializeApp(environment.firebase),
     ComponentModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
