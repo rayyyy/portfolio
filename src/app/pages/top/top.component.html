@@ -1,19 +1,55 @@
 <div class="container has-text-centered">
+  <h1>1枚で全情報を載せたい</h1>
   <img src="assets/photo.jpg" width="500">
+  <ul>
+    <li *ngFor="let item of (items | async)">
+      名前: {{ item.first_name + ' ' + item.last_name }} / 年齢: {{ item.age }}
+    </li>
+  </ul>
 
-  <nav class=" level">
-    <p class="level-item has-text-centered">
-      <a class="link is-info">Home</a>
-    </p>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">自己紹介</a>
-    </p>
-    <h1 class="level-item has-text-centered">Rainiero Navarro</h1>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">スキル</a>
-    </p>
-    <p class="level-item has-text-centered">
-      <a class="link is-info">お問い合わせ</a>
-    </p>
-  </nav>
+  <div class="is-size-3">スキル</div>
+  <ul>
+    <li>Golang lv2</li>
+    <li>goa lv2</li>
+    <li>Java...Android lv3</li>
+    <li>Ruby lv2</li>
+    <li>Ruby on Rails lv2</li>
+    <li>php lv4</li>
+    <li>symfony 1.4 lv4</li>
+    <li>Node.js lv3</li>
+    <li>Express lv3</li>
+    <li>Angular lv3</li>
+    <li>Nuxt lv3</li>
+    <li>AWS lv3</li>
+    <li>Docker lv4</li>
+    <li>GAS lv2</li>
+    <li>GCP lv3</li>
+  </ul>
+  <div class="is-size-3">自己紹介</div>
+  <p>2017年にエイチームに新卒で入社、以後エイチーム引越し侍で、<br>
+    エンジニアとして、主にバックエンドの開発に従事。<br>
+    営業、マーケティング、コールセンターの業務システムからweb開発まで、幅広く経験。<br>
+    開発以外には、新卒&中途採用活動、勉強会の運営、チームマネジメントを経験。<br>
+  </p>
+  <div class="is-size-3">開発経験</div>
+  <p>
+    golangのパッチ処理<br>
+    nuxtによるwebサイト<br>
+    symfony 1.4によるwebサイト<br>
+    ruby on railsによるwebサイトとAPIサーバー<br>
+    terraformによるaws環境構築<br>
+    dockerでの環境構築<br>
+    Androidアプリ作成<br>
+    GASとスプレッドシートによる集計業務アプリ<br>
+  </p>
+
+  <div class="is-size-3">お問い合わせ</div>
+  <p>nraavy@gmail.com</p>
+
+  <br>
+  技術ブログ:
+  <a href="https://rainiero.tech" target="_blank">rainiero.tech</a><br>
+  <a href="https://twitter.com/rainiero_it" target="_blank">twitter アカウント</a><br>
+  <a href="https://qiita.com/nrainiero" target="_blank">qiita アカウント</a><br>
+  <a href="https://github.com/rayyyy/" target="_blank">github アカウント</a><br>
 </div>
