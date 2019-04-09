@@ -1,6 +1,20 @@
-<div class="container has-text-centered">
-  <h1>1枚で全情報を載せたい</h1>
-  <img src="assets/photo.jpg" width="500">
+<section class="hero is-fullheight-with-navbar has-background">
+  <div class="hero-background">
+    <img class="hero-background-image" src="assets/photo.jpg">
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Ray Navarro
+      </h1>
+      <h2 class="subtitle">
+        Web Engineer
+      </h2>
+    </div>
+  </div>
+</section>
+
+<div class="container is-fluid has-text-centered">
   <ul>
     <li *ngFor="let item of (items | async)">
       名前: {{ item.first_name + ' ' + item.last_name }} / 年齢: {{ item.age }}
