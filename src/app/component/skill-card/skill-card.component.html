@@ -1,0 +1,17 @@
+<div class="card">
+  <p class="title is-5">{{title}}</p>
+  <!-- The magical tile element! -->
+  <ng-container *ngFor="let row of rows">
+    <div class="columns is-mobile">
+      <div class="column">
+        {{row[0]}}
+      </div>
+      <div class="column">
+        {{row[1]}}
+      </div>
+      <div class="column">
+        {{row[2]}}
+      </div>
+    </div>
+  </ng-container>
+</div>

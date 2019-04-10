@@ -29,6 +29,7 @@
   </div>
 </section>
 
+
 <div class="container is-fluid has-text-centered">
   <section class="section">
     <div class="container">
@@ -45,25 +46,23 @@
   <section class="section">
     <div class="container">
       <h1 class="title">skill</h1>
+      <h2 class="subtitle">実務ベースで書いております。</h2>
     </div>
   </section>
-  <ul>
-    <li>Golang lv2</li>
-    <li>goa lv2</li>
-    <li>Java...Android lv3</li>
-    <li>Ruby lv2</li>
-    <li>Ruby on Rails lv2</li>
-    <li>php lv4</li>
-    <li>symfony 1.4 lv4</li>
-    <li>Node.js lv3</li>
-    <li>Express lv3</li>
-    <li>Angular lv3</li>
-    <li>Nuxt lv3</li>
-    <li>AWS lv3</li>
-    <li>Docker lv4</li>
-    <li>GAS lv2</li>
-    <li>GCP lv3</li>
-  </ul>
+  <div class="columns">
+    <div class="column">
+      <app-skill-card [title]="'バックエンド'" [rows]="backendRows"></app-skill-card>
+    </div>
+    <div class="column">
+      <app-skill-card [title]="'フロントエンド'" [rows]="frontendRows"></app-skill-card>
+    </div>
+    <div class="column">
+      <app-skill-card [title]="'インフラ'" [rows]="infraRows"></app-skill-card>
+    </div>
+    <div class="column">
+      <app-skill-card [title]="'その他'" [rows]="otherRows"></app-skill-card>
+    </div>
+  </div>
   <section class="section">
     <div class="container">
       <h1 class="title">works</h1>
