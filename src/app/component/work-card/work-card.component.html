@@ -1,9 +1,10 @@
 <div class="card has-text-left">
+  <p class="title is-5">{{works.title}}</p>
   <div class="columns is-mobile is-multiline">
     <div class="column is-3 col-title">期間</div>
-    <div class="column is-9 col-body">{{works.date}}</div>
+    <div class="column is-9 col-body has-text-weight-bold">{{works.date}}</div>
     <div class="column is-3 col-title">所属</div>
-    <div class="column col-body">{{works.role}}</div>
+    <div class="column col-body has-text-weight-bold">{{works.role}}</div>
     <div class="column is-full-mobile is-9-desktop col-title">業務内容</div>
     <div class="column is-full-mobile is-3-desktop col-title is-hidden-mobile">技術</div>
     <div class="column is-full-mobile is-9-desktop col-body" [innerHTML]='work_body'></div>
