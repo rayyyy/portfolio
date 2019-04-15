@@ -16,6 +16,7 @@ export class TopComponent implements OnInit {
     ['PHP', '2年', '★★★★'],
     ['symfony', '6ヶ月', '★★★★★'],
     ['Go', '6ヶ月', '★'],
+    ['goa', '2ヶ月', '★'],
     ['Ruby', '1年6ヶ月', '★★★'],
     ['Rails', '1年6ヶ月', '★★★'],
   ];
@@ -23,10 +24,12 @@ export class TopComponent implements OnInit {
   frontendRows = [
     ['技術', '経験年数', 'スキル感'],
     ['javascript', '2年', '★★'],
+    ['Express', '6ヶ月', '★★'],
     ['Nuxt.js', '6ヶ月', '★★'],
     ['React', '2ヶ月', '★'],
     ['Angular(学生)', '6ヶ月', '★★★'],
     ['Android Java(学生)', '3年', '★★★'],
+    ['ionic', '3ヶ月', '★★'],
   ];
 
   infraRows = [
@@ -53,25 +56,30 @@ export class TopComponent implements OnInit {
     date: '2019/3~',
     role: '株式会社ヒュープロ リードエンジニア',
     work_body: `
+    唯一の正社員エンジニアとして入社。<br>
+    経営、企画、開発に関わりながら業務遂行。<br>
+    <br>
     最速転職のサイト 保守、改修<br>
     社内管理画面 改修、保守<br>
     社内環境のdocker化<br>
     mixpanelの導入<br>
     施策提案、実施、検証<br>
+    開発体制整備<br>
     AWSでサーバー社内wiki構築<br>
-    インフラのコード化<br>
-    エンジニア採用（インターン`,
+    インフラのコード化<br>`,
     tech_body: `
-    react<br>
-    rails<br>
+    React<br>
+    Ruby on Rails<br>
+    MySQL<br>
     terraform<br>
-    docker<br>`
+    Circle CI<br>
+    Docker<br>`
   };
 
   works2 = {
     title: '一つ前の仕事',
     date: '2018/7~2019/2',
-    role: '株式会社エイチーム引越し侍 株式会社エイチームコネクト出向 技術開発部 新規開発チームリーダー エンジニア',
+    role: '株式会社エイチームコネクト 技術開発部 新規開発チームリーダー',
     work_body: `
     社内管理画面の保守、改修<br>
     trixbox<br>
@@ -83,9 +91,16 @@ export class TopComponent implements OnInit {
     エンジニア採用活動（中途面接、インターン面接、インターン運営、リクルーター、ミートアップ企画運営）<br>
     エンジニア組織運営 (育成、体制の整備 open project)`,
     tech_body: `
-    react<br>
-    rails<br>
-    terraform<br>
+    Ruby on Rails<br>
+    symfony(PHP)<br>
+    Nuxt.js<br>
+    Go<br>
+    AWS AppSync<br>
+    MySQL/Aurora<br>
+    GraphQL<br>
+    Lambda<br>
+    Trixbox Asterisk<br>
+    GAS<br>
     docker<br>`
   };
 
