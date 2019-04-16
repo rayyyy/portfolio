@@ -52,7 +52,7 @@ export class TopComponent implements OnInit {
   ];
 
   works1 = {
-    title: '現在の仕事',
+    title: '現在',
     date: '2019/3~',
     role: '株式会社ヒュープロ リードエンジニア',
     work_body: `
@@ -77,7 +77,7 @@ export class TopComponent implements OnInit {
   };
 
   works2 = {
-    title: '一つ前の仕事',
+    title: 'エイチームコネクト 技術開発部時代',
     date: '2018/7~2019/2',
     role: '株式会社エイチームコネクト 技術開発部 新規開発チームリーダー',
     work_body: `
@@ -105,7 +105,7 @@ export class TopComponent implements OnInit {
   };
 
   works3 = {
-    title: '二つ前の仕事',
+    title: 'エイチーム引越し侍 マーケティング部時代',
     date: '2018/2~2018/6',
     role: '株式会社エイチーム引越し侍 マーケティング部 エンジニア',
     work_body: `
@@ -116,14 +116,13 @@ export class TopComponent implements OnInit {
     ABテスト実施<br>
     新卒エンジニアの教育（研修内容を決め、実施）`,
     tech_body: `
-    react<br>
-    rails<br>
-    terraform<br>
-    docker<br>`
+    Ruby on Rails<br>
+    symfony(PHP)<br>
+    javascript<br>`
   };
 
   works4 = {
-    title: '三つ前の仕事',
+    title: 'エイチーム引越し侍 企画営業部時代',
     date: '2017/6~2018/1',
     role: '株式会社エイチーム引越し侍 企画営業部 エンジニア',
     work_body: `
@@ -131,15 +130,12 @@ export class TopComponent implements OnInit {
     顧客やシステムを管理する社内管理画面の保守、改修<br>
     企業向けに提供している管理画面の保守、改修<br>
     <br>
-    また、企業と提携した際、企業向けのフォームの新規作成 2週間<br>
+    提携した企業向けのフォームの新規作成のメイン担当<br>
     sendgrid メルマガのシステムの基盤の導入担当 3週間<br>
-    <br>
     エンジニア勉強会運営`,
     tech_body: `
-    react<br>
-    rails<br>
-    terraform<br>
-    docker<br>`
+    symfony(PHP)<br>
+    javascript<br>`
   };
 
   constructor(db: AngularFirestore) {
