@@ -1,10 +1,10 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <h1>Ray Navarro</h1>
     </a>
 
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" ng-click="navClick($event)">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" (click)="navClick()">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -13,16 +13,16 @@
 
   <div id="navbarBasicExample" class="navbar-menu" [class.is-active]="navStatus">
     <div class="navbar-start">
-      <a class="navbar-item" href="/#profile">
+      <a class="navbar-item" href="/#profile" (click)="navClick()">
         profile
       </a>
-      <a class="navbar-item" href="/#skill">
+      <a class="navbar-item" href="/#skill" (click)="navClick()">
         skill
       </a>
-      <a class="navbar-item" href="/#works">
+      <a class="navbar-item" href="/#works" (click)="navClick()">
         works
       </a>
-      <a class="navbar-item" href="/#contact">
+      <a class="navbar-item" href="/#contact" (click)="navClick()">
         contact
       </a>
     </div>
