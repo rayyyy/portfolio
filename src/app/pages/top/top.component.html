@@ -31,11 +31,9 @@
 
 
 <div class="container container-padding has-text-centered">
-  <section class="section" id="profile">
-    <div class="container">
-      <h1 class="title">profile</h1>
-    </div>
-  </section>
+  <div class="titlebox" id="profile">
+    <p class="is-size-2">profile</p>
+  </div>
 
   <p>
     エンジニア三年目で社会人三年目のナバロ　ライです。<br>
@@ -62,11 +60,9 @@
     資格は基本情報技術者だけ持っています。
   </p>
 
-  <section class="section" id="skill">
-    <div class="container">
-      <h1 class="title">skill</h1>
-    </div>
-  </section>
+  <div class="titlebox" id="skill">
+    <p class="is-size-2">skill</p>
+  </div>
   <div class="columns">
     <div class="column">
       <app-skill-card [title]="'バックエンド'" [rows]="backendRows"></app-skill-card>
@@ -81,22 +77,18 @@
       <app-skill-card [title]="'その他'" [rows]="otherRows"></app-skill-card>
     </div>
   </div>
-  <section class="section" id="works">
-    <div class="container">
-      <h1 class="title">works</h1>
-    </div>
-  </section>
 
+  <div class="titlebox" id="works">
+    <p class="is-size-2">works</p>
+  </div>
   <app-work-card [works]='works1'></app-work-card>
   <app-work-card [works]='works2'></app-work-card>
   <app-work-card [works]='works3'></app-work-card>
   <app-work-card [works]='works4'></app-work-card>
 
-  <section class="section" id="contact">
-    <div class="container">
-      <h1 class="title">contact</h1>
-    </div>
-  </section>
+  <div class="titlebox" id="contact">
+    <p class="is-size-2">contact</p>
+  </div>
   <a href="mailto:nraavy@gmail.com">nraavy@gmail.com</a><br>
   技術ブログ:
   <a href="https://rainiero.tech" target="_blank">rainiero.tech</a><br>
