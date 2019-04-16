@@ -8,6 +8,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 })
 export class WorkCardComponent implements OnInit {
   @Input() works: {
+    title: string,
     date: string,
     role: string,
     work_body: string,
