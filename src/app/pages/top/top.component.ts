@@ -56,8 +56,12 @@ export class TopComponent implements OnInit {
     date: '2019/3~',
     role: '株式会社ヒュープロ リードエンジニア',
     work_body: `
-    唯一の正社員エンジニアとして入社。<br>
+    唯一の正社員エンジニアとして入社。(副業やフリーランスエンジニアはいます。)<br>
     経営、企画などにも関わりながら開発業務遂行。<br>
+    メンバーの開発効率のためにDocker化を推進したり、<br>
+    Gitフローを決めたりしました。<br>
+    属人化した常態から人が増えても耐えうる体制にするべく体制を整備しています。<br>
+    また、インターンエンジニアに参画してもらい、教育しながら、チーム開発をしています。<br>
     <br>
     <業務一覧><br>
     最速転職のサイト 保守、改修<br>
@@ -73,7 +77,6 @@ export class TopComponent implements OnInit {
     Ruby on Rails<br>
     MySQL<br>
     terraform<br>
-    Circle CI<br>
     Docker<br>`
   };
 
@@ -89,6 +92,7 @@ export class TopComponent implements OnInit {
     その際、レガシーなシステムをリプレイスしていくために、GoやRails、Nuxt.jsやGraphQLなどを使いシステムを構築しました。<br>
     また、開発とは別に、採用活動やチームビルディングを業務として任されており、<br>
     チームの開発率向上のための施策を回し検証し、チームメンバーの自発的な成長を促せました。<br>
+    <br>
     <業務一覧><br>
     社内管理画面の保守、改修<br>
     trixbox<br>
