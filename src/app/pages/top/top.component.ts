@@ -24,9 +24,9 @@ export class TopComponent implements OnInit {
   frontendRows = [
     ['技術', '経験年数', 'スキル感'],
     ['javascript', '2年', '★★'],
-    ['Express(学生時代)', '6ヶ月', '★★'],
     ['Nuxt.js', '6ヶ月', '★★'],
     ['React', '2ヶ月', '★'],
+    ['Express(学生時代)', '6ヶ月', '★★'],
     ['Angular(学生時代)', '6ヶ月', '★★★'],
     ['Android Java(学生時代)', '3年', '★★★'],
     ['ionic(趣味)', '3ヶ月', '★★'],
@@ -76,6 +76,7 @@ export class TopComponent implements OnInit {
     React<br>
     Ruby on Rails<br>
     MySQL<br>
+    Elasticsearch<br>
     terraform<br>
     Docker<br>`
   };
@@ -100,7 +101,6 @@ export class TopComponent implements OnInit {
     スプレッドシートとGASを用いた営業メンバーの電話による成果可視化<br>
     Goを用いたwindows用社内システムの開発<br>
     営業成績の見える化ダッシュボード開発<br>
-    <br>
     エンジニア採用活動（中途面接、インターン面接、インターン運営、リクルーター、ミートアップ企画運営）<br>
     エンジニア組織運営 (育成、体制の整備 open project)`,
     tech_body: `
