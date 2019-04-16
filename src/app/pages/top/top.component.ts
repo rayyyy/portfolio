@@ -59,6 +59,7 @@ export class TopComponent implements OnInit {
     唯一の正社員エンジニアとして入社。<br>
     経営、企画、開発に関わりながら業務遂行。<br>
     <br>
+    <業務一覧><br>
     最速転職のサイト 保守、改修<br>
     社内管理画面 改修、保守<br>
     社内環境のdocker化<br>
@@ -81,6 +82,7 @@ export class TopComponent implements OnInit {
     date: '2018/7~2019/2',
     role: '株式会社エイチームコネクト 技術開発部 新規開発チームリーダー',
     work_body: `
+    <業務一覧><br>
     社内管理画面の保守、改修<br>
     trixbox<br>
     コールセンターシステムの保守、改修<br>
@@ -109,6 +111,17 @@ export class TopComponent implements OnInit {
     date: '2018/2~2018/6',
     role: '株式会社エイチーム引越し侍 マーケティング部 エンジニア',
     work_body: `
+    引越し侍サイトの改善(ABテストなど)を主なタスクとし、<br>
+    新機能の開発や、チームの開発効率向上に徹していました。<br>
+    新機能としては、社外向けの基幹システムのWEB API作成になります。<br>
+    開発担当として、レビューをもらいながら一人で、設計、開発、テストコードを1ヶ月で開発しました。<br>
+    基幹システムと連携するため、なるべくバグが出ないように、テストを書いたり、<br>
+    WEB APIの仕様書を作成し、社外の人と連携し無事に終わらせました。また、日々運用する中で出るトラブル対応もしました。<br>
+    チームの開発効率向上のためには、
+    本番環境と、開発環境でのデータの差異による不都合がたくさん出だしたので、<br>
+    継続的に本番DBをマスキングし、だれでもテストに使える環境を作ることで解決しました。<br>
+    <br>
+    <業務一覧><br>
     引越し侍の基幹システムのAPI化とAPI仕様書の作成&API提供先の会社との連携<br>
     本番データベースをマスキングするシステム作成<br>
     VWOで改修、保守、検証<br>
@@ -118,6 +131,7 @@ export class TopComponent implements OnInit {
     tech_body: `
     Ruby on Rails<br>
     symfony(PHP)<br>
+    MySQL/Aurora<br>
     javascript<br>`
   };
 
@@ -131,6 +145,7 @@ export class TopComponent implements OnInit {
     言語は主にPHPを使用しており、フレームワークはsymfonyを使用していました。<br>
     また、基幹システムへの新機能の導入や新規ページの作成を任せてもらい、一人でDB・システム設計開発、運用基盤まで作成しました。<br>
     <br>
+    <業務一覧><br>
     引越し侍のサイトの改修、保守<br>
     顧客企業や社内システムを管理する社内管理画面の保守、改修<br>
     企業に提供している管理画面の保守、改修<br>
