@@ -1,67 +1,98 @@
-import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Component, OnInit } from "@angular/core";
+import { AngularFirestore } from "@angular/fire/firestore";
+import { Observable } from "rxjs";
 
 @Component({
-  selector: 'app-top',
-  templateUrl: './top.component.html',
-  styleUrls: ['./top.component.sass']
+  selector: "app-top",
+  templateUrl: "./top.component.html",
+  styleUrls: ["./top.component.sass"],
 })
 export class TopComponent implements OnInit {
   items: Observable<any[]>;
 
-
   backendRows = [
-    ['技術', '経験年数', 'スキル感'],
-    ['PHP', '2年', '★★★★'],
-    ['symfony', '2年', '★★★★★'],
-    ['Go', '半年', '★'],
-    ['Ruby', '1年半', '★★★'],
-    ['Rails', '1年半', '★★★'],
-    ['goa(趣味)', '2ヶ月', '★'],
+    ["技術", "経験年数", "スキル感"],
+    ["Go", "2年", "★★★"],
+    ["Ruby", "4年", "★★★★"],
+    ["Rails", "4年", "★★★★"],
   ];
 
   frontendRows = [
-    ['技術', '経験年数', 'スキル感'],
-    ['javascript', '2年', '★★'],
-    ['Nuxt.js', '半年', '★★'],
-    ['React', '2ヶ月', '★'],
-    ['Express(学生時代)', '半年', '★★'],
-    ['Angular(学生時代)', '半年', '★★★'],
-    ['Android Java(学生時代)', '3年', '★★★'],
-    ['ionic(趣味)', '3ヶ月', '★★'],
+    ["技術", "経験年数", "スキル感"],
+    ["JavaScript", "4年", "★★★★"],
+    ["TypeScript", "2年", "★★★★"],
+    ["Nuxt.js", "2年", "★★★★"],
   ];
 
   infraRows = [
-    ['技術', '経験年数', 'スキル感'],
-    ['AWS', '1年', '★★'],
-    ['GCP(趣味)', '半年', '★★'],
-    ['terraform', '半年', '★★'],
-    ['Docker', '1年', '★★★★'],
-    ['Linux', '3年', '★★★'],
+    ["技術", "経験年数", "スキル感"],
+    ["AWS", "3年", "★★★★"],
+    ["GCP", "2年", "★★★"],
+    ["terraform", "2年", "★★★"],
+    ["Docker", "3年", "★★★★"],
+    ["Linux", "5年", "★★★"],
   ];
 
   otherRows = [
-    ['技術', '経験年数', 'スキル感'],
-    ['チームビルディング', '1年', '★★★'],
-    ['採用活動', '1年半', '★★'],
-    ['エクセル', '?', '★★'],
-    ['パワポ', '?', '★★'],
-    ['GAS', '1年', '★★★'],
-    ['テストコード', '1年', '★★'],
+    ["技術", "経験年数", "スキル感"],
+    ["チームビルディング", "3年", "★★★"],
+    ["採用活動", "4年", "★★★"],
+    ["GAS", "3年", "★★★"],
+    ["テストコード", "3年", "★★"],
   ];
 
-  works1 = {
-    title: '現在',
-    date: '2019/3~',
-    role: '株式会社ヒュープロ リードエンジニア',
+  works5 = {
+    title: "現在",
+    date: "2019/5~",
+    role:
+      "株式会社メディアエンジン プロダクトマネージャー兼エンジニア スペシャリスト",
+    work_body: `
+    最初は業務委託として参画し、2019/9月に正社員として入社しました。<br>
+    業務システムをゼロから立ち上げ、社内システムとして導入いたしました。<br>
+    フロントエンドからインフラまで担当していましたが、人数が増えてきたこともあり、バックエンドやインフラメインの仕事になりました。<br>
+    チームで力を出しやすくするために開発マシンの選定、技術選択、Dockerによる開発フローの整備を行いました。<br>
+    またインフラはterraformでコード化するなどして管理しやすくしたり、社内のAWS基盤を整えたりしました。
+    役職はなかったものの、テックリード的なポジションだったかなと思います。
+    入社時は二人目のエンジニアだったこともあり、採用業務も行っております。組織のバリュー定義したり、採用戦略から実際の採用業務まで行っています。
+    現在正社員4人+外部の副業のチームになっております<br>
+    入社後にソウルドアウト株式会社のグループ入りしたので、会社統合も経験しています。システム統合によって一時期はレガシーサービスの管理もやっていました。<br>
+    2021/1月からプロダクトマネージャーとして任命されて、現在はサービスの企画から実行や中長期計画というところを代表含め役員たちやBizメンバーとすり合わせながら進めています。<br>
+    コーディングは減りましたが、レビューや設計とインフラの管理は以前と変わらずやっております。<br>
+    2021/4月からエンジニアのスペシャリストというエンジニアの4段階の上から2つ目の職位を頂き、テックリード的なポジションを担っております。
+
+    <br>
+    <業務一覧><br>
+    プロダクトマネージャー業務<br>
+    サービスの戦略、企画、中長期計画づくり<br>
+    <br>
+    エンジニア業務<br>
+    社内システムの設計、開発、レビュー<br>
+    開発体制整備<br>
+    エンジニア組織立ち上げ、採用戦略、採用業務<br>
+    全体のインフラ管理<br>`,
+    tech_body: `
+    Nuxt<br>
+    Ruby on Rails API<br>
+    Go<br>
+    GCP,BigQuery<br>
+    MySQL<br>
+    CircleCI<br>
+    AWS,ECS,他多数<br>
+    terraform<br>
+    Docker<br>`,
+  };
+
+  works4 = {
+    title: "株式会社ヒュープロ時代",
+    date: "2019/3~",
+    role: "株式会社ヒュープロ リードエンジニア",
     work_body: `
     唯一の正社員エンジニアとして入社。(副業やフリーランスエンジニアはいます。)<br>
     経営、企画などにも関わりながら開発業務遂行。<br>
     メンバーの開発効率のためにDocker化を推進したり、<br>
     Gitフローを決めたりしました。<br>
-    属人化した常態から人が増えても耐えうる体制にするべく体制を整備しています。<br>
-    また、インターンエンジニアに参画してもらい、教育しながら、チーム開発をしています。<br>
+    属人化した常態から人が増えても耐えうる体制にするべく体制を整備や、インターンエンジニアに参画してもらい、教育しながら、チーム開発をしていました。<br>
+    以前からいた社外の技術顧問との関係値構築に失敗し、自分から退職しました。このときに心理的安全性の大事さを学びました。<br>
     <br>
     <業務一覧><br>
     最速転職のサイト 保守、改修<br>
@@ -78,13 +109,13 @@ export class TopComponent implements OnInit {
     MySQL<br>
     Elasticsearch<br>
     terraform<br>
-    Docker<br>`
+    Docker<br>`,
   };
 
-  works2 = {
-    title: 'エイチームコネクト 技術開発部時代',
-    date: '2018/7~2019/2',
-    role: '株式会社エイチームコネクト 技術開発部 新規開発チームリーダー',
+  works3 = {
+    title: "エイチームコネクト 技術開発部時代",
+    date: "2018/7~2019/2",
+    role: "株式会社エイチームコネクト 技術開発部 新規開発チームリーダー",
     work_body: `
     コールセンター部隊のエンジニアとして従事。<br>
     既存システムの運用保守とは別に、新規システムを主に開発するチームのリーダーを任されました。<br>
@@ -114,13 +145,13 @@ export class TopComponent implements OnInit {
     Lambda<br>
     Trixbox Asterisk<br>
     GAS<br>
-    docker<br>`
+    docker<br>`,
   };
 
-  works3 = {
-    title: 'エイチーム引越し侍 マーケティング部時代',
-    date: '2018/2~2018/6',
-    role: '株式会社エイチーム引越し侍 マーケティング部 エンジニア',
+  works2 = {
+    title: "エイチーム引越し侍 マーケティング部時代",
+    date: "2018/2~2018/6",
+    role: "株式会社エイチーム引越し侍 マーケティング部 エンジニア",
     work_body: `
     引越し侍サイトの改善(ABテストなど)を主なタスクとし、<br>
     新機能の開発や、チームの開発効率向上に徹していました。<br>
@@ -143,13 +174,13 @@ export class TopComponent implements OnInit {
     Ruby on Rails<br>
     symfony(PHP)<br>
     MySQL/Aurora<br>
-    javascript<br>`
+    javascript<br>`,
   };
 
-  works4 = {
-    title: 'エイチーム引越し侍 企画営業部時代',
-    date: '2017/6~2018/1',
-    role: '株式会社エイチーム引越し侍 企画営業部 エンジニア',
+  works1 = {
+    title: "エイチーム引越し侍 企画営業部時代",
+    date: "2017/6~2018/1",
+    role: "株式会社エイチーム引越し侍 企画営業部 エンジニア",
     work_body: `
     新卒エンジニアとして配属後、提携している企業向けの管理画面の改修をメインで担当していました。<br>
     また、サイトの最適化のために、サイト改善などもしておりました。<br>
@@ -165,12 +196,12 @@ export class TopComponent implements OnInit {
     エンジニア勉強会運営`,
     tech_body: `
     symfony(PHP)<br>
-    javascript<br>`
+    javascript<br>`,
   };
 
   constructor(db: AngularFirestore) {
-    this.items = db.collection('users').valueChanges();
+    this.items = db.collection("users").valueChanges();
   }
 
-  ngOnInit() { }
+  ngOnInit() {}
 }
